@@ -1,0 +1,45 @@
+.main__categories{
+    margin: 0 30px;
+}
+.main__categories{
+    margin-top: 110px;
+}
+.way__wrapper{
+    height: 30px;
+}
+.filter__wrapper{
+    justify-content: flex-end;
+    display: flex;
+    height: 80px;
+}
+.categories__grid{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.item{
+    width: 245px;
+}
+#sort__categories{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    padding: 7px;
+    border: none;
+}
+#sort__categories::after{
+    box-shadow:  0 0 7px rgba(0,0,0,0.5);
+}
+#sort__categories:focus{
+    box-shadow:  0 0 7px rgba(0,0,0,0.5);
+}
+select:focus{
+    outline: none;
+    border: none;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

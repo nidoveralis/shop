@@ -1,0 +1,128 @@
+main{
+    height: 100%;
+    margin: 110px 40px;
+}
+.bascket__wrapper{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.order__block{
+    width: 70%;
+}
+.orderwr{
+    width: 113%;
+    background-color: #f5f5f5a9;
+    height: 250px ;
+    display: grid;
+    margin-bottom: 35px;
+    grid-template-columns: repeat(1fr,5);
+    grid-template-rows: repeat(1fr,4);
+}
+.buy__block{
+    height: 300px;
+    bottom: 0;
+    width: 20%;
+    background-color: #f5f5f5a9;
+}
+.order__delete{
+    height: 30px;
+    width: 35px;
+    cursor: pointer;
+    position: absolute;
+    background-color: #f5f5f5a9;
+    opacity: .4;
+    right: 22%;
+    grid-column: 5/7;
+    margin: 10px;
+}
+.order__delete::after{
+    content: "";
+    left: 0;
+    height: 2px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.order__delete::before{
+    content: "";
+    left: 0;
+    height: 2px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+.img__order{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    max-width: 200px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.img__order img{
+    width: 100%;
+}
+.order__title{
+    grid-column: 2/5;
+}
+.price{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.count__plus{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+}
+.count__total{
+    height: 30px;
+    width: 50px;
+    background-color: darkorange;
+    color: #fff;
+    margin-left: 15px;
+    align-items: center;
+}
+.minus__or{
+    height: 30px;
+    width: 30px;
+    background-color: darkorange;
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.plus__or{
+    height: 30px;
+    width: 30px;
+    background-color: darkorange;
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.count{
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    color: #fff;
+    background-color: darkorange;
+    padding-left: 19px;
+    margin-left: 5px;
+    padding-top: 2px;
+}

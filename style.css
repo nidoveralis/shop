@@ -1,0 +1,128 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+}
+.content{
+    height: 90px;
+}
+.header__block{
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+    top: 0;
+}
+.container{
+    border-bottom: 1px solid rgba(150, 149, 149, 0.137);
+}
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+    height: 90px;
+}
+.menu__burger{
+    width: 30px;
+    height: 22px;
+    display: block;
+    cursor: pointer;
+}
+.burger{
+    width: 30px;
+    height: 3px;
+    background-color: rgb(63, 63, 63);
+    position: relative;
+    display: block;
+}
+.burger::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(63, 63, 63);
+    position: relative;
+    display: block;
+    top: 7px;
+}
+
+.burger::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(63, 63, 63);
+    position: relative;
+    display: block;
+    top: 20px;
+}
+.logo{
+    height: 100px;
+    padding-left: 90px;
+}
+.icon__menu{
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    list-style-type: none;
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+}
+.menu__left{
+    background-color: rgb(246, 241, 250);
+    border-right: 1px solid rgb(63, 63, 63);
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+    z-index: 9;
+    margin: 0;
+    left: -100%;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+}
+.menu__left.active{
+    left: 0;
+}
+.wraper__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+   
+}
+.menu__title{
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: darkorange;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.menu__list{
+    list-style: none;
+    font-size: 20px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(235, 230, 241, 0.979);
+}
+.menu__list li{
+    margin-top: 15px;
+    cursor: pointer;
+}
+.menu__list li:hover {
+    color: darkorange;
+    transition: all .1s ease 0s;
+    -webkit-transition: all .1s ease 0s;
+    -moz-transition: all .1s ease 0s;
+    -ms-transition: all .1s ease 0s;
+    -o-transition: all .1s ease 0s;
+}
+.about__text{
+    margin: 100px 40px;
+}
